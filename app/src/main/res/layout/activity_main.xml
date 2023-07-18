@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="275dp"
+        android:layout_height="237dp"
+        android:backgroundTint="#85E0F6"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.115">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="246dp"
+            android:layout_height="226dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ver Saldo" />
+
+            <RadioButton
+                android:id="@+id/radioButtonIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresar" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRetirar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retirar" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salir" />
+
+        </RadioGroup>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:padding="20sp"
+        android:text="Bienvenido(a) al banco  Awake Bank"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtIngresar"
+        android:layout_width="318dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="72dp"
+        android:autoText="false"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Monto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#0946E3"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngresar"
+        app:layout_constraintVertical_bias="0.161" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
